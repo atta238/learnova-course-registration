@@ -1,0 +1,4771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1535</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Learnova</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1535</width>
+      <height>860</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="login_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop-1.png);</string>
+     </property>
+     <widget class="QLineEdit" name="email_fild">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>402</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>   Email</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forgpas_btn">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>712</y>
+        <width>271</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Login">
+      <property name="geometry">
+       <rect>
+        <x>393</x>
+        <y>285</y>
+        <width>191</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>41</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 51, 102);
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="admin_lbl">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>639</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Admin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Learnova_text">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>LEARNOVA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="login_btn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>772</y>
+        <width>325</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="registerswitch_btn">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>300</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>361</y>
+        <width>155</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 8px solid #003366;
+background-color: transparent;
+border-radius:5px;
+
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::HLine</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Sunken</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginswitch_btn">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>292</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pass_fild">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>495</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="stud_lbl">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>639</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Student</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stud_btn">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>590</y>
+        <width>42</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>42</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>42</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 21px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="admin_btn">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>590</y>
+        <width>42</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>42</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>42</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius: 21px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="forgpas_txt">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>710</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Forgot Password?</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Register">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>285</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>41</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+background:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error_lbl">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>796</y>
+        <width>371</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red
+</string>
+      </property>
+      <property name="text">
+       <string>Email is incorrect</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hidded_pic_2">
+      <property name="geometry">
+       <rect>
+        <x>895</x>
+        <y>504</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hidden_pass_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>895</x>
+        <y>504</y>
+        <width>35</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>forgpas_txt</zorder>
+     <zorder>Register</zorder>
+     <zorder>Login</zorder>
+     <zorder>email_fild</zorder>
+     <zorder>admin_lbl</zorder>
+     <zorder>Learnova_text</zorder>
+     <zorder>login_btn</zorder>
+     <zorder>frame</zorder>
+     <zorder>pass_fild</zorder>
+     <zorder>stud_lbl</zorder>
+     <zorder>admin_btn</zorder>
+     <zorder>stud_btn</zorder>
+     <zorder>loginswitch_btn</zorder>
+     <zorder>registerswitch_btn</zorder>
+     <zorder>forgpas_btn</zorder>
+     <zorder>error_lbl</zorder>
+     <zorder>hidded_pic_2</zorder>
+     <zorder>hidden_pass_btn_2</zorder>
+    </widget>
+    <widget class="QWidget" name="register_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop-1.png);</string>
+     </property>
+     <widget class="QLineEdit" name="pass_fild_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>475</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Learnova_text_2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>LEARNOVA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Register_btn">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>772</y>
+        <width>325</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Register_2">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>285</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>41</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #003366;
+background:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="register_switch">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>300</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>361</y>
+        <width>230</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 8px solid #003366;
+background-color: transparent;
+border-radius:5px;
+
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::HLine</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Sunken</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="email_fild_2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>402</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>   Email</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginswitch_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>292</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Login_2">
+      <property name="geometry">
+       <rect>
+        <x>393</x>
+        <y>285</y>
+        <width>191</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>41</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(69, 123, 157);
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Fir_name_fild">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>548</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  First Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="las_name_fild">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>621</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Last Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ID_fild">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>696</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  ID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hidden_pass_btn_3">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>485</y>
+        <width>35</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hidded_pic_3">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>484</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_email">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>414</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Email</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_pass">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>468</y>
+        <width>561</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Password must be at least 8 characters</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_fna">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>560</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_lna">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>633</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_id">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>707</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid ID</string>
+      </property>
+     </widget>
+     <zorder>pass_fild_2</zorder>
+     <zorder>hidded_pic_3</zorder>
+     <zorder>Login_2</zorder>
+     <zorder>Learnova_text_2</zorder>
+     <zorder>Register_btn</zorder>
+     <zorder>Register_2</zorder>
+     <zorder>register_switch</zorder>
+     <zorder>frame_2</zorder>
+     <zorder>email_fild_2</zorder>
+     <zorder>loginswitch_btn_2</zorder>
+     <zorder>Fir_name_fild</zorder>
+     <zorder>las_name_fild</zorder>
+     <zorder>ID_fild</zorder>
+     <zorder>hidden_pass_btn_3</zorder>
+     <zorder>err_email</zorder>
+     <zorder>err_pass</zorder>
+     <zorder>err_fna</zorder>
+     <zorder>err_lna</zorder>
+     <zorder>err_id</zorder>
+    </widget>
+    <widget class="QWidget" name="forgot_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop-2.png);</string>
+     </property>
+     <widget class="QLabel" name="Learnova_text_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>LEARNOVA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="msg_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>352</y>
+        <width>1161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>We’ve sent a verification code to your email “”  </string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>190</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>190</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="verifi_fild">
+      <property name="geometry">
+       <rect>
+        <x>587</x>
+        <y>433</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Verification Code</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="check_btn">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>530</y>
+        <width>281</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Check</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error_txt">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>530</y>
+        <width>401</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Verification code is incorrect</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="confirm_btn">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>770</y>
+        <width>321</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="new_pass_fild">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>690</y>
+        <width>400</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  New Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="errorsizepass_txt">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>686</y>
+        <width>561</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Password must be at least 8 characters</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hidden_pass_btn">
+      <property name="geometry">
+       <rect>
+        <x>905</x>
+        <y>703</y>
+        <width>35</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hidded_pic">
+      <property name="geometry">
+       <rect>
+        <x>905</x>
+        <y>703</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>new_pass_fild</zorder>
+     <zorder>hidded_pic</zorder>
+     <zorder>Learnova_text_3</zorder>
+     <zorder>msg_txt</zorder>
+     <zorder>back_pic</zorder>
+     <zorder>back_btn</zorder>
+     <zorder>verifi_fild</zorder>
+     <zorder>check_btn</zorder>
+     <zorder>error_txt</zorder>
+     <zorder>confirm_btn</zorder>
+     <zorder>errorsizepass_txt</zorder>
+     <zorder>hidden_pass_btn</zorder>
+    </widget>
+    <widget class="QWidget" name="first_user_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/First_admin_page.png);</string>
+     </property>
+     <widget class="QPushButton" name="Logoutuser_btn">
+      <property name="geometry">
+       <rect>
+        <x>1006</x>
+        <y>62</y>
+        <width>234</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="View_grad_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>432</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>View Grades</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Mycourses_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>331</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>My Courses</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Hellouser_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>646</x>
+        <y>75</y>
+        <width>261</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Hello Atta</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_courses_lbl_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>636</x>
+        <y>463</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>There are no courses</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Register_course_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>230</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Register Course</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="all_courses_table_2">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>176</y>
+        <width>916</width>
+        <height>649</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Print_report_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>533</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Print Report</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Mycourses_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QLabel" name="no_mycourses_lbl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>430</y>
+        <width>661</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>You didn't register any Course</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="My_courses_table">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>951</width>
+        <height>649</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Mycourses_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>80</y>
+        <width>261</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>My Courses</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_mycrs">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_mycrs">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Available_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QLabel" name="availablecrs_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>80</y>
+        <width>391</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Available Courses</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_avlcrs">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_avlcourses_lbl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>430</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>No Available Courses</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_avlcrs">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="available_courses_table">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>916</width>
+        <height>649</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <zorder>availablecrs_txt</zorder>
+     <zorder>back_pic_avlcrs</zorder>
+     <zorder>no_avlcourses_lbl</zorder>
+     <zorder>available_courses_table</zorder>
+     <zorder>back_btn_avlcrs</zorder>
+    </widget>
+    <widget class="QWidget" name="register_crs_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QLabel" name="instructor_txt_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Instructor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="credit_Hours_txt_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>410</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Credit Hours:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="semester_txt_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>480</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Semester:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_regiscrs">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>120</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_prerequisites_lbl_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>410</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>25</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>No Prerequisites</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="prerequisites_table_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>190</y>
+        <width>401</width>
+        <height>540</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Prerequisites_txt_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>130</y>
+        <width>321</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>30</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Prerequisites</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="crs_name_txt_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Course Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_regiscrs">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>120</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="regiscrs_btn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>780</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="succ_regiscrs_txt">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>740</y>
+        <width>621</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:green;</string>
+      </property>
+      <property name="text">
+       <string>You have registered this course successfully</string>
+      </property>
+     </widget>
+     <zorder>no_prerequisites_lbl_2</zorder>
+     <zorder>instructor_txt_2</zorder>
+     <zorder>credit_Hours_txt_2</zorder>
+     <zorder>semester_txt_2</zorder>
+     <zorder>prerequisites_table_2</zorder>
+     <zorder>Prerequisites_txt_2</zorder>
+     <zorder>crs_name_txt_2</zorder>
+     <zorder>back_pic_regiscrs</zorder>
+     <zorder>back_btn_regiscrs</zorder>
+     <zorder>regiscrs_btn</zorder>
+     <zorder>succ_regiscrs_txt</zorder>
+    </widget>
+    <widget class="QWidget" name="view_grades_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QPushButton" name="back_btn_viewgrd">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>150</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_viewgrd">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>150</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="overall_gpa_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Overall GPA : 3.99 (A+)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="grades_table">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>230</y>
+        <width>611</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_grades_lbl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>673</x>
+        <y>462</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>25</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>No Grades</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="display_grades_btn">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>110</y>
+        <width>211</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Display</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="semester_selector">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>110</y>
+        <width>241</width>
+        <height>79</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    background:transparent;
+    background-color:#457B9D;
+    border: 5px solid #457B9D;
+    border-radius: 32px;
+    color: white;
+   font: bold 36px &quot;Arial&quot;;
+}
+
+QComboBox QAbstractItemView {
+	background:transparent;
+	background-color:white;
+    color: #003366;
+}</string>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string> Semester</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_sems">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>No selected semester</string>
+      </property>
+     </widget>
+     <zorder>no_grades_lbl</zorder>
+     <zorder>back_pic_viewgrd</zorder>
+     <zorder>back_btn_viewgrd</zorder>
+     <zorder>overall_gpa_txt</zorder>
+     <zorder>grades_table</zorder>
+     <zorder>display_grades_btn</zorder>
+     <zorder>semester_selector</zorder>
+     <zorder>err_sems</zorder>
+    </widget>
+    <widget class="QWidget" name="first_admin_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/First_admin_page.png);</string>
+     </property>
+     <widget class="QPushButton" name="Logoutadmin_btn">
+      <property name="geometry">
+       <rect>
+        <x>1006</x>
+        <y>62</y>
+        <width>234</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Hello_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>646</x>
+        <y>75</y>
+        <width>261</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Hello Admin</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Add_course_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>270</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Add Course</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Add_admin_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>393</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Add Admin </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Manage_grad_btn">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>510</y>
+        <width>321</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 36px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Manage Grades</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_courses_lbl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>636</x>
+        <y>463</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>There are no courses</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="all_courses_table">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>176</y>
+        <width>916</width>
+        <height>649</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Add_admin_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop-2.png);</string>
+     </property>
+     <widget class="QLabel" name="Learnova_text_5">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>LEARNOVA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Add_admin_txt">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>320</y>
+        <width>661</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #003366;
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>ADD AN ADMIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_adm">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>230</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_adm">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>230</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="las_name_fild_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>637</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Last Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_lna_3">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>649</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pass_fild_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>491</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ID_fild_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>712</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_email_3">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>430</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Email</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_pass_3">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>484</y>
+        <width>561</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Password must be at least 8 characters</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_id_3">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>723</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_fna_3">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>576</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Fir_name_fild_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>564</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  First Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="email_fild_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>418</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>   Email</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Add_adm_btn">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>788</y>
+        <width>325</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hidden_pass_btn_4">
+      <property name="geometry">
+       <rect>
+        <x>907</x>
+        <y>502</y>
+        <width>35</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="hidded_pic_4">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>500</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="succ_adm_txt">
+      <property name="geometry">
+       <rect>
+        <x>926</x>
+        <y>804</y>
+        <width>561</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:green;</string>
+      </property>
+      <property name="text">
+       <string>Admin has been added successfully </string>
+      </property>
+     </widget>
+     <zorder>back_pic_adm</zorder>
+     <zorder>hidded_pic_4</zorder>
+     <zorder>Learnova_text_5</zorder>
+     <zorder>Add_admin_txt</zorder>
+     <zorder>las_name_fild_3</zorder>
+     <zorder>err_lna_3</zorder>
+     <zorder>pass_fild_3</zorder>
+     <zorder>ID_fild_3</zorder>
+     <zorder>err_email_3</zorder>
+     <zorder>err_pass_3</zorder>
+     <zorder>err_id_3</zorder>
+     <zorder>err_fna_3</zorder>
+     <zorder>Fir_name_fild_3</zorder>
+     <zorder>email_fild_3</zorder>
+     <zorder>Add_adm_btn</zorder>
+     <zorder>hidden_pass_btn_4</zorder>
+     <zorder>back_btn_adm</zorder>
+     <zorder>succ_adm_txt</zorder>
+    </widget>
+    <widget class="QWidget" name="Add_course_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop-2.png);</string>
+     </property>
+     <widget class="QLabel" name="Learnova_text_4">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>210</y>
+        <width>491</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(69, 123, 157);
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>LEARNOVA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Add_crs_txt">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>320</y>
+        <width>691</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #003366;
+font: 700 53pt &quot;Arial&quot;;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string>ADD A COURSE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Instruc_fild">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>591</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Instructor</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Semester_fild">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>677</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Semester</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Credit_hrs_fild">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>505</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>  Credit Hours</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="course_name_fild">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>421</y>
+        <width>400</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>  Course Name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Add_crs_btn">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>763</y>
+        <width>325</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_crs">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>230</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_crs">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>230</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_semester">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>690</y>
+        <width>551</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Number</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_crs_name">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>430</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Course Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_credit_hrs">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>520</y>
+        <width>601</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invaild Number</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_instruc">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>600</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="succ_txt">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>780</y>
+        <width>561</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:green;</string>
+      </property>
+      <property name="text">
+       <string>Course has been added successfully </string>
+      </property>
+     </widget>
+     <zorder>back_pic_crs</zorder>
+     <zorder>Learnova_text_4</zorder>
+     <zorder>Add_crs_txt</zorder>
+     <zorder>Instruc_fild</zorder>
+     <zorder>Semester_fild</zorder>
+     <zorder>Credit_hrs_fild</zorder>
+     <zorder>course_name_fild</zorder>
+     <zorder>Add_crs_btn</zorder>
+     <zorder>back_btn_crs</zorder>
+     <zorder>err_semester</zorder>
+     <zorder>err_crs_name</zorder>
+     <zorder>err_credit_hrs</zorder>
+     <zorder>err_instruc</zorder>
+     <zorder>succ_txt</zorder>
+    </widget>
+    <widget class="QWidget" name="update_prereq">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QPushButton" name="back_btn_upcrs">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>130</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_upcrs">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>130</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="crs_name_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Course Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="instructor_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Instructor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="credit_Hours_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>420</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Credit Hours:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="semester_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>490</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Semester:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Prerequisites_txt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>586</x>
+        <y>190</y>
+        <width>321</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>30</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Prerequisites</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="prerequisites_table">
+      <property name="geometry">
+       <rect>
+        <x>523</x>
+        <y>260</y>
+        <width>401</width>
+        <height>540</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_prerequisites_lbl">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>440</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>25</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>No Prerequisites</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Prerequisite_add_fild">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>420</y>
+        <width>351</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>   Prerequisite Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Prerequisite_rem_fild">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>540</y>
+        <width>351</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+border:5px solid #457B9D;
+border-radius:26px;
+color:#457B9D
+</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>   Prerequisite Name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_btn">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>417</y>
+        <width>190</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_btn">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>535</y>
+        <width>190</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>REMOVE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="remove_crs_btn">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>70</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+background-color: #003366;
+border-radius: 30px;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Remove Course</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_prereq_add_lbl">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>380</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Prerequisite Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="succ_addpre_txt">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>380</y>
+        <width>581</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:green;</string>
+      </property>
+      <property name="text">
+       <string>Prerequisite has been added successfully</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="err_prereq_remo_lbl">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>500</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:red</string>
+      </property>
+      <property name="text">
+       <string>Invalid Prerequisite Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="succ_remopre_txt">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>500</y>
+        <width>581</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>17</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:green;</string>
+      </property>
+      <property name="text">
+       <string>Prerequisite has been removed successfully</string>
+      </property>
+     </widget>
+     <zorder>back_pic_upcrs</zorder>
+     <zorder>crs_name_txt</zorder>
+     <zorder>instructor_txt</zorder>
+     <zorder>credit_Hours_txt</zorder>
+     <zorder>semester_txt</zorder>
+     <zorder>Prerequisites_txt</zorder>
+     <zorder>prerequisites_table</zorder>
+     <zorder>no_prerequisites_lbl</zorder>
+     <zorder>Prerequisite_add_fild</zorder>
+     <zorder>Prerequisite_rem_fild</zorder>
+     <zorder>add_btn</zorder>
+     <zorder>remove_btn</zorder>
+     <zorder>remove_crs_btn</zorder>
+     <zorder>back_btn_upcrs</zorder>
+     <zorder>err_prereq_add_lbl</zorder>
+     <zorder>succ_addpre_txt</zorder>
+     <zorder>err_prereq_remo_lbl</zorder>
+     <zorder>succ_remopre_txt</zorder>
+    </widget>
+    <widget class="QWidget" name="view_pre_page">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Desktop3.png);</string>
+     </property>
+     <widget class="QLabel" name="instructor_txt_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Instructor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_prerequisites_lbl_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>410</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>25</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>No Prerequisites</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_btn_viewpre">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>120</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_pic_viewpre">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>120</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Prerequisites_txt_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>130</y>
+        <width>321</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>30</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#003366;</string>
+      </property>
+      <property name="text">
+       <string>Prerequisites</string>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="credit_Hours_txt_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>410</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Credit Hours:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableView" name="prerequisites_table_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>190</y>
+        <width>401</width>
+        <height>540</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView{
+background: transparent;
+gridline-color: rgb(0, 51, 102);
+border: 4px solid #003366 ;
+color: #457B9D;
+}
+QHeaderView::section {
+	font: 700 16pt &quot;Arial&quot;;
+	background-color:  #003366;
+    color:  white; 
+}
+QScrollBar:vertical {
+    background: #457B9D;
+    width: 10px;
+}
+
+QScrollBar:horizontal {
+    background: #457B9D; 
+    height: 10px; 
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background:  #003366; 
+    border-radius: 6px;
+}
+
+
+
+</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="crs_name_txt_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Course Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="semester_txt_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>480</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:#457B9D;</string>
+      </property>
+      <property name="text">
+       <string>Semester:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+     <zorder>no_prerequisites_lbl_3</zorder>
+     <zorder>back_pic_viewpre</zorder>
+     <zorder>instructor_txt_3</zorder>
+     <zorder>Prerequisites_txt_3</zorder>
+     <zorder>credit_Hours_txt_3</zorder>
+     <zorder>prerequisites_table_3</zorder>
+     <zorder>crs_name_txt_3</zorder>
+     <zorder>semester_txt_3</zorder>
+     <zorder>back_btn_viewpre</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>email_fild</tabstop>
+  <tabstop>pass_fild</tabstop>
+  <tabstop>admin_btn</tabstop>
+  <tabstop>stud_btn</tabstop>
+  <tabstop>loginswitch_btn</tabstop>
+  <tabstop>registerswitch_btn</tabstop>
+  <tabstop>forgpas_btn</tabstop>
+  <tabstop>login_btn</tabstop>
+  <tabstop>email_fild_2</tabstop>
+  <tabstop>pass_fild_2</tabstop>
+  <tabstop>Fir_name_fild</tabstop>
+  <tabstop>las_name_fild</tabstop>
+  <tabstop>ID_fild</tabstop>
+  <tabstop>register_switch</tabstop>
+  <tabstop>loginswitch_btn_2</tabstop>
+  <tabstop>Register_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

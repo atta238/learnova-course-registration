@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/book.png</file>
+        <file>images/Undo.png</file>
+        <file>images/Desktop-1.png</file>
+        <file>images/Desktop-2.png</file>
+        <file>images/First_admin_page.png</file>
+        <file>images/eye.png</file>
+        <file>images/hidden.png</file>
+        <file>images/Desktop3.png</file>
+    </qresource>
+</RCC>
