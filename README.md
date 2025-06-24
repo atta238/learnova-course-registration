@@ -16,6 +16,9 @@ The system works with **files only**, not databases. Data is read once at the st
 
 ## 🧾 Features
 
+- Login/Register
+- Forgot Password using Email
+
 ### 👨‍🎓 Students
 - Course registration with prerequisite checks
 - View completed course grades
