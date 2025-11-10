@@ -48,6 +48,12 @@ The system works with **files only**, not databases. Data is read once at the st
 
 ---
 
+## 🎥 Demo
+
+Check out the video demonstration [here](https://drive.google.com/drive/folders/1cwssQzGbrD0vIiJT7ejfffZLxsbYT2KS?usp=drive_link) 
+
+---
+
 ## 👨‍💻 Author
 
 - **Ahmed Mohamed Ahmed Atta**
